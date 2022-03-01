@@ -1,0 +1,332 @@
+/* | ---------------------------------- | Style Sheet - Created By Harry Baird | --------------------- | */
+
+
+/* Last Updated: 30/12/2021                                                                         */
+
+
+/* ----------------------------------- Selection --------------------- */
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+
+/* ----------------------------------- Scrollbar --------------------- */
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(212, 212, 212);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #212529;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+
+/* ----------------------------------- Body --------------------- */
+
+.cover {
+    height: 100vh !important;
+    z-index: -50;
+}
+
+.txt-row {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.txt-img {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.txt-img img {
+    width: 80%;
+    align-self: center;
+    object-fit: fill;
+    filter: grayscale(100%) brightness(80%);
+    border: #333 3px solid;
+}
+
+.bg {
+    background: url(../img/bg.jpg) repeat 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden !important;
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+    resize: both;
+    background-repeat: no-repeat;
+    background-position: center -30px;
+    height: 100vh !important;
+}
+
+.bg2 {
+    background: url(../img/bg3.jpg) repeat 0 0;
+    filter: grayscale(100%) brightness(30%);
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden !important;
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+    resize: both;
+    background-repeat: no-repeat;
+    background-position: center -30px;
+}
+
+.bg::before {
+    background-color: rgba(31, 31, 31, 0.205);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.582);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.bg2::before {
+    background-color: rgba(31, 31, 31, 0.452);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.582);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.floating-images {
+    position: absolute;
+    width: 20%;
+    z-index: 0;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+}
+
+.navbar {
+    background: none !important;
+    backdrop-filter: blur(2px);
+    background-color: rgba(27, 26, 26, 0.514);
+    border-bottom: rgba(236, 236, 236, 0.014);
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+}
+
+body {
+    background-color: #0c0c0c !important;
+    color: white;
+    font-family: Segoe UI;
+}
+
+.cover-container {
+    max-width: 60em;
+}
+
+.learnmore {
+    background: none !important;
+    border: white 2px solid;
+    color: white;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    transition: 250ms;
+    transition-timing-function: linear;
+    font-weight: 600;
+}
+
+.learnmore:hover {
+    background: white !important;
+    border: white 2px solid;
+    color: black;
+    transition: 500ms;
+    transition-timing-function: linear;
+}
+
+.learnmore span {
+    transition: 250ms;
+    height: 27px;
+    color: white;
+}
+
+.learnmore span svg {
+    height: 0.8em;
+    stroke: 1;
+    justify-self: center;
+    vertical-align: middle;
+    transition: 500ms;
+}
+
+.learnmore span svg line {
+    transition: 500ms;
+}
+
+.learnmore:hover span {
+    transition: 500ms;
+    transform: translate(10px, 0);
+    color: black;
+}
+
+.learnmore:hover span svg line {
+    stroke: black !important;
+    transition: 500ms;
+}
+
+.submit {
+    background: white !important;
+    border: white 2px solid;
+    color: black;
+    box-shadow: 2px 2px 5px rgb(43, 43, 43);
+    transition: 500ms;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 10px 20px;
+}
+
+.submit:hover {
+    background: white !important;
+    border: white 2px solid;
+    color: black;
+    box-shadow: none;
+}
+
+.submit span {
+    transition: 500ms;
+    height: 21px;
+}
+
+.submit span svg {
+    height: 0.8em;
+    stroke: 1;
+    justify-self: center;
+    vertical-align: middle;
+}
+
+.submit:hover span {
+    transition: 500ms;
+    /* padding-left: 25px; */
+}
+
+.signup-input {
+    background: rgba(0, 0, 0, 0.212) !important;
+    border: white 2px solid;
+    color: white;
+    box-shadow: 2px 2px 5px rgb(43, 43, 43);
+}
+
+.signup-lbl {
+    text-align: left;
+}
+
+.grid-img {
+    height: 500px;
+    flex-direction: row;
+}
+
+.grid-img h1 {
+    position: absolute;
+    z-index: 5;
+    text-align: left;
+    align-self: center;
+    padding-left: 4rem;
+    font-size: 5em;
+    font-weight: 400;
+}
+
+.grid-img img {
+    filter: grayscale(100%) brightness(10%);
+    object-fit: cover !important;
+    object-position: top;
+    width: 25%;
+    padding: 0;
+}
+
+.nav-link {
+    padding: .25rem 0;
+    font-weight: 500;
+    color: rgb(255, 255, 255) !important;
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+hr.animated {
+    animation: expand .8s ease-in;
+}
+
+@keyframes expand {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.easysurvey {
+    font-size: 6em !important;
+    font-family: 'Expletus Sans', cursive;
+    font-weight: 600;
+}
+
+.embed-responsive-item {
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .easysurvey {
+        font-size: 3em !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .flip {
+        flex-direction: column-reverse !important;
+    }
+}
+
+
+/* ------- Hidden Cat ------- */
+
+
+/*
+                   _ |\_
+                   \` ..\
+              __,.-" =__Y=
+            ."        )
+      _    /   ,    \/\_
+     ((____|    )_-\ \_-`
+      `-----'`-----` `--`
+
+*/
